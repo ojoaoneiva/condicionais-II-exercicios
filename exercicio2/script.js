@@ -1,15 +1,37 @@
 let nacionalidade = prompt("Digite aqui a nacionalidade").toLowerCase()
 
-if(nacionalidade === "brasileira"){
+if (nacionalidade === "brasileira") {
     console.log("a pessoa é do Brasil!")
-} else if(nacionalidade === "argentina"){
+} else if (nacionalidade === "argentina") {
     console.log("a pessoa é da Argentina!")
-} else if(nacionalidade === "uruguaia"){
+} else if (nacionalidade === "uruguaia") {
     console.log("a pessoa é do Uruguai!")
-} else if(nacionalidade === "chilena"){
+} else if (nacionalidade === "chilena") {
     console.log("a pessoa é do Chile!")
-} else if(nacionalidade === "colombiana"){
+} else if (nacionalidade === "colombiana") {
     console.log("a pessoa é da Colômbia!")
-} else{
+} else {
     console.log("nacionalidade não encontrada")
+}
+
+// Crie uma estrutura com o switch case que verifique se a nacionalidade recebida é igual a alguma das nacionalidades acima. Caso seja, imprima a nacionalidade no console. O programa deve imprimir "nacionalidade não encontrada" caso o valor de nacionalidade não corresponda a nenhum das opções acima.
+
+switch (nacionalidade) {
+    case "brasileira":
+        console.log("a pessoa é do Brasil!")
+        break
+    case "argentina":
+        console.log("a pessoa é da Argentina!")
+        break
+    case "uruguaia":
+        console.log("a pessoa é do Uruguai!")
+        break
+    case "chilena":
+        console.log("a pessoa é do Chile!")
+        break
+    case "colombiana":
+        console.log("a pessoa é da Colômbia!")
+        break
+    default:
+        console.log("nacionalidade não encontrada")
 }
